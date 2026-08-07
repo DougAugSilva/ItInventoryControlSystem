@@ -104,6 +104,10 @@ Development uses a Windows environment with WSL, along with ASDF to install and 
 
 ## 5. Running the project
 For a complete step-by-step guide on how to execute the project, see `docs\execution_manual.md`.
+the base users I created for testing are:
+- User: `john.doe` | Password: `TestPassword1234!`
+- User: `admin.besttechti` | Password: `StrongAdminPassword123!`
+
 > Make sure all languages and frameworks are installed in their respective versions.
 
 ### 5.1 Windows environment
