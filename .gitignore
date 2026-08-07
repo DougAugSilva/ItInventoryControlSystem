@@ -1,0 +1,26 @@
+# .NET
+backend/**/bin/
+backend/**/obj/
+backend/**/wwwroot/uploads/
+*.user
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Docker / secrets (frontend/.env is not a secret - just the API URL - and stays versioned)
+docker/.env
+
+# Editor / OS
+.vs/
+.vscode/
+*.suo
+Thumbs.db
+
+# Claude
+.claude/
+claude/
+
+# Locals
+locals/

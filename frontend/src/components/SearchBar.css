@@ -1,0 +1,107 @@
+.search-bar {
+  position: relative;
+  display: flex;
+  gap: var(--space-xs);
+  flex: 1;
+  min-width: 0;
+  max-width: 560px;
+}
+
+.search-bar input[type='search'] {
+  flex: 1;
+  min-width: 0;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.search-bar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--color-text-soft);
+}
+
+.search-bar-icon:hover {
+  background: var(--color-bg-soft);
+}
+
+.search-filters {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  display: flex;
+  gap: var(--space-xs);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-xs);
+  z-index: 20;
+}
+
+.search-filters select {
+  padding: 0.45rem 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: #fff;
+  max-width: 150px;
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  list-style: none;
+  margin: 0;
+  padding: var(--space-xs);
+  max-height: 320px;
+  overflow-y: auto;
+  z-index: 20;
+}
+
+.search-results li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.search-results li:hover {
+  background: var(--color-bg-soft);
+}
+
+.search-results li div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+}
+
+.search-results li span {
+  color: var(--color-text-soft);
+  font-size: 0.75rem;
+}
+
+.search-empty {
+  color: var(--color-text-soft);
+  font-size: 0.875rem;
+  cursor: default !important;
+}
+
+.search-empty:hover {
+  background: transparent !important;
+}

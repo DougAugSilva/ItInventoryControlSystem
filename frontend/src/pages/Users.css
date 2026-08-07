@@ -1,0 +1,136 @@
+.users-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  max-width: 420px;
+  margin: 0 auto var(--space-lg);
+}
+
+.users-form h2 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.users-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.875rem;
+  color: var(--color-text-soft);
+}
+
+.users-form input[type='text'],
+.users-form input[type='password'] {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.users-password-hint {
+  font-size: 0.75rem;
+  color: var(--color-text-soft);
+  margin-top: -0.15rem;
+}
+
+.users-checkbox {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.4rem !important;
+  color: var(--color-text) !important;
+}
+
+.users-form-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.users-form button[type='submit'] {
+  padding: 0.65rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--color-primary-dark);
+  color: #fff;
+  font-weight: 600;
+}
+
+.users-form button[type='submit']:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.users-cancel {
+  padding: 0.65rem 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--color-text);
+}
+
+.users-error {
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.users-success {
+  color: #1a7a1a;
+  margin: 0;
+}
+
+.users-empty {
+  color: var(--color-text-soft);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  text-align: left;
+  padding: 0.75rem var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.users-table th {
+  background: #fff;
+  font-size: 0.8rem;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.users-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.users-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.users-actions button {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: #fff;
+  font-size: 0.8rem;
+}
+
+.users-remove {
+  color: var(--color-accent);
+  border-color: var(--color-accent) !important;
+}
+
+.users-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: var(--color-text-soft);
+  border-color: var(--color-border) !important;
+}

@@ -1,0 +1,126 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow);
+}
+
+.layout-logo {
+  height: 36px;
+}
+
+.layout-tabs {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.layout-tabs a {
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius);
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.layout-tabs a.active {
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+.layout-tabs a:hover:not(.active) {
+  background: var(--color-bg-soft);
+}
+
+.layout-icon-button {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--color-text);
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.layout-icon-button:hover {
+  background: var(--color-bg-soft);
+}
+
+.layout-user {
+  position: relative;
+}
+
+.layout-user-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  z-index: 20;
+}
+
+.layout-user-menu button {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: none;
+  background: none;
+  text-align: left;
+  color: var(--color-accent);
+}
+
+.layout-user-menu button:hover {
+  background: var(--color-bg-soft);
+}
+
+.layout-content {
+  flex: 1;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.layout-content-inner {
+  max-width: 80%;
+  flex: 1;
+  display: flex;
+  margin: 0 auto;
+  padding: var(--space-lg);
+  background: var(--color-bg-soft);
+}
+
+@media (max-width: 900px) {
+  .layout-header {
+    flex-wrap: wrap;
+  }
+
+  .search-bar {
+    order: 3;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .layout-content-inner {
+    max-width: 100%;
+  }
+}

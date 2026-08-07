@@ -1,0 +1,62 @@
+.loans-empty,
+.loans-error {
+  color: var(--color-text-soft);
+}
+
+.loans-error {
+  color: var(--color-accent);
+}
+
+.loans-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.loans-table th,
+.loans-table td {
+  text-align: left;
+  padding: 0.75rem var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.loans-table th {
+  background: #fff;
+  font-size: 0.8rem;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.loans-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.loans-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.loans-type {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-soft);
+}
+
+.loans-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.loans-badge.loaned {
+  background: rgba(30, 144, 255, 0.15);
+  color: var(--color-primary-dark);
+}
+
+.loans-badge.returned {
+  background: rgba(43, 43, 43, 0.08);
+  color: var(--color-text-soft);
+}

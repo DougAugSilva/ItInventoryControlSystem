@@ -1,0 +1,127 @@
+.home-page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.home-new {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-primary-dark);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+.home-form {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.home-form-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.home-photo-input {
+  font-size: 0.875rem;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  max-width: 140px;
+}
+
+.home-photo-input input {
+  display: none;
+}
+
+.home-form-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.home-form-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.875rem;
+  color: var(--color-text-soft);
+}
+
+.home-form-fields input[type='text'],
+.home-form-fields input[type='number'],
+.home-form-fields input[type='date'],
+.home-form-fields select,
+.home-form-fields textarea {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.home-form-fields fieldset {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.home-form-fields legend {
+  padding: 0 0.4rem;
+  font-size: 0.8rem;
+  color: var(--color-text-soft);
+}
+
+.home-radio {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.4rem !important;
+  color: var(--color-text) !important;
+}
+
+.home-loan {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-bg-soft);
+  border-radius: var(--radius);
+}
+
+.home-form-fields button[type='submit'] {
+  align-self: flex-start;
+  padding: 0.65rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--color-primary-dark);
+  color: #fff;
+  font-weight: 600;
+}
+
+.home-form-fields button[type='submit']:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.home-error {
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.home-success {
+  color: #1a7a1a;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .home-form {
+    flex-direction: column;
+  }
+}

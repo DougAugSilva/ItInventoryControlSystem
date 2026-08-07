@@ -1,0 +1,35 @@
+@import './styles/variables.css';
+@import './styles/page-box.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--cor-fundo-suave);
+  color: var(--cor-texto);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--cor-primaria-escura);
+}
